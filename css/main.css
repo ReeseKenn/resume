@@ -1,3 +1,98 @@
+*{
+  box-sizing:border-box;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+.capsule{
+
+}
+.layout{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.highlight {
+  color: red;
+  border-radius: 5px;
+  background: #efefef;
+}
+
+/* page css */
 body{
-  background: #999;
+  color: #333;
+  font:16px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+  background: gray;
+}
+.wrapper{
+  background: #ececec;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sideBar{
+  float: left;
+  width:240px;
+}
+.sideBar .avatar{
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+.sideBar .avatar::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 120px solid #d6d6d6;
+  border-left: 120px solid transparent;
+  border-top: 8px solid #d6d6d6;
+  border-bottom: 8px solid transparent;
+  margin-top:30px;
+}
+.sideBar .avatar h1{
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 40px;
+}
+.sideBar .avatar h1::after{
+  content: '';
+  display: block;
+  width: 80px;
+  border-top: 1px solid #d6d6d6;
+  margin: 0 auto;
+}
+.sideBar .avatar p{
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+.sideBar .contact {
+  padding: 0 15px;
+  margin-top: 0;
+}
+.sideBar .contact li{
+  border-bottom: 1px solid #d6d6d6;
+  list-style: none;
+  line-height: 30px;
+  font-family: STKaiti;
+}
+.sideBar .contact .iconfont{
+  border-right: 1px solid #d6d6d6;
+  padding-right: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 18px;
+  color: #7bbaaa;
+}
+
+.main{
+  margin-left:240px;
+  background: #fff;
+  height: 600px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
